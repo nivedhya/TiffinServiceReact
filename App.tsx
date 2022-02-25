@@ -1,20 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import LoginPage from '/Users/nivedhiyanithin/Desktop/ReactProject/React/TiffinServiceReactNative/.expo/src/Components/LoginPage'
+import  PageHeader from '/Users/nivedhiyanithin/Desktop/ReactProject/React/TiffinServiceReactNative/.expo/src/Components/Header';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+   
+   <View style={styles.container}>
+     
+      <PageHeader/>
+      <LoginPage/>
+      
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+   
   },
+pageHeader:{
+  flex: 1
+},
+pageBody :{
+  flex : 2
+}
+
 });
